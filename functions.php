@@ -31,13 +31,12 @@ add_action('wp_enqueue_scripts', 'load_js');
 // Theme Options
 add_theme_support('menus');
 
-// Register Custom Navigation Walker
-require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
-
-
 // Menus
 register_nav_menus(
     array(
         'primary' => 'Primary Menu',
     )
 );
+
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
